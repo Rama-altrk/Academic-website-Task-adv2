@@ -1,0 +1,133 @@
+.all{
+    column-count: 2; 
+    column-gap: 50px; 
+}
+
+/* تنسيق السؤال */
+.oneFaq{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px; 
+    .que{
+        font-family: var(--font-primary);
+        line-height: 150%;
+        h3{
+            color: var(--grey15);
+            font-weight: var(--fw-600);
+            font-size: 22px;
+        }
+        p{
+            padding-top: 24px;
+            color: var(--grey20);
+            font-weight: var(--fw-500);
+            font-size: 20px;
+        }
+        .btnMobile{
+            display: none;
+        }
+    }
+        .iconContainer{
+            width: 40px !important;
+            height: 40px;
+            border-radius: 6px !important;
+            border: none !important;
+            outline: 2px solid var(--grey15);
+            :nth-child(1){
+                width: 24px;
+                height: 24px;
+            }
+        }
+}
+
+.openPadding{
+    padding: 40px;
+}
+.closePadding{
+    padding: 34px 40px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .all{
+        column-gap: 40px;
+    }
+    .oneFaq{
+        gap: 24px;
+        margin-bottom: 24px; 
+        .que{
+            h3{
+                font-size: 18px;
+            }
+            p{
+                padding-top: 24px;
+                font-size: 16px;
+            }
+            
+        }
+            .iconContainer{
+                width: 32px !important;
+                height: 32px;
+                border-radius: 4px !important;
+                padding: 6px !important;
+                :nth-child(1){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    }
+
+    .openPadding{
+        padding: 34px 30px;
+    }
+    .closePadding{
+        padding: 24px 30px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .all{
+        column-count: 1;
+    }
+    .oneFaq{
+        gap: 24px;
+        margin-bottom: 20px; 
+        .que{
+            h3{
+                font-size: 18px;
+            }
+            .btnMobile{
+                display: block;
+            }
+            p{
+                padding-top: 24px;
+                font-size: 16px;
+            }
+            
+        }
+            .iconContainer{
+                width: 32px !important;
+                height: 32px;
+                border-radius: 4px !important;
+                padding: 6px !important;
+                
+                :nth-child(1){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .btnLab{
+                display: none;
+            }
+        
+    }
+
+    .openPadding{
+        padding: 30px 24px;
+    }
+    .closePadding{
+        padding: 20px 24px;
+    }
+}

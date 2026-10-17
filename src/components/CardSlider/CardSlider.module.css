@@ -1,0 +1,182 @@
+/* ------styling one Card------ */
+.mainCard{
+    height: 462px;
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    .imgAndName{
+        .containerImg{
+            border: 1px solid var(--grey20) !important;
+            width: 80px;
+            height: 80px;
+            border-radius: 50% !important;
+            /* display: flex; */
+            img{
+                width: 60px;
+                
+            }
+            margin: 0 auto;
+        }
+        h3{
+            color: var(--grey20);
+            font-family: var(--font-primary);
+            font-weight: var(--fw-600);
+            font-size: 24px;
+            line-height: 150%;
+            margin-top: 12px;
+            text-align: center;
+        }
+    }
+    .evaluation{
+        display: flex;
+        /* align-items: center; */
+        gap: 5px;
+        img{
+            width: 24px;
+        }
+    }
+    p{
+        color: var(--grey20);
+        font-family: var(--font-primary);
+        font-weight: var(--fw-500);
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+
+    }
+}
+
+/* ------styling slider----- */
+.slider{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .containerCard{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        /* overflow: hidden; */
+    }
+    .btn{
+        border-radius: 8px !important;
+        border: 2px solid var(--grey20) !important;
+        button{
+            display: flex;
+            align-items: center;
+            .arrow{
+                font-size: 15px;
+            }
+        }
+    }
+    .containerBtnsMobile{
+        display: none;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .btnMobile{
+            border-radius: 8px !important;
+            border: 2px solid var(--grey20) !important;
+            button{
+                display: flex;
+                align-items: center;
+                .arrow{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+        
+}
+
+
+@media screen and (max-width: 1440px) {
+    /* -----------styling one Card------- */
+    .mainCard{
+        height: 374px;
+        padding: 40px !important;
+        padding: 3.3% !important;
+        gap: 24px;
+        box-shadow: 4px 4px 0px 2px var(--grey5) !important;
+        .imgAndName{
+            .containerImg{
+                width: 66px;
+                height: 66px;
+                img{
+                    width: 50px;
+                    position: relative;
+                    left: -5.5px;
+                }
+            }
+            h3{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+        .evaluation{
+            gap: 4px;
+            img{
+                width: 20px;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    /* ------styling slider----- */
+    .slider{
+        gap: 40px;
+        .containerCard{
+            gap: 40px;
+        }
+        .btn{
+            padding: 12px !important;
+            button{
+                .arrow{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    /* -------styling one Card----------- */
+    .mainCard{
+        height: 322px;
+        width: 100%;
+        padding: 30px !important;
+        gap: 20px;
+        box-shadow: 4px 4px 0px 1px var(--grey5) !important;
+        .imgAndName{
+            h3{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+        
+    }
+
+
+    /* ------styling slider----- */
+    .slider{
+        flex-direction: column;
+        gap: 40px;
+        .containerCard{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .btn{
+            display: none;
+        }
+        .containerBtnsMobile{
+            display: flex;
+        }
+    }
+}

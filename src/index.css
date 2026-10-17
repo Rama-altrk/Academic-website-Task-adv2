@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* Colors */
+  
+  --absolutefff : #FFFFFF;
+  --orang97 : #FFF5F0;
+  --orang95 : #FFEFE5;
+  --orang90 : #FFDECC;
+  --orang80 : #FFBE99;
+  --orang75 : #FFAE80;
+  --orang65 : #FF8D4D;
+  --black : #000000;
+  --grey5 : #1E1E1E;
+  --grey10 : #1A1A1A;
+  --grey15 : #262626;
+  --grey20 : #333333;
+  --grey30 : #4C4C4D;
+  --grey40 : #656567;
+
+  /* Fonts */
+  --font-primary : "Outfit", sans-serif;
+  --font-secondary : "Raleway", sans-serif;
+  --fw-500 : 500;
+  --fw-600 : 600;
+  --fw-700 : 700;
+  --fw-800 : 800;
+}
+
+body{
+  background-color: var(--orang97);
+}
+
+.mainContainer{
+  padding-left: 8.43%;
+  padding-right: 8.43%;
+}
+
+.secContainer{
+  padding-left: 2.6%;
+  padding-right: 2.6%;
+}
+
+.betweenSection{
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainContainer{
+    padding-left: 5.55%;
+    padding-right: 5.55%;
+  }
+  .secContainer{
+    padding-left: 2.6%;
+    padding-right: 2.6%;
+  }
+  .betweenSection{
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .secContainer{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .betweenSection{
+    margin-top: 80px;
+  }
+}

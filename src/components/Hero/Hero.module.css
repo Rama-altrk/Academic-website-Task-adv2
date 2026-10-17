@@ -1,0 +1,197 @@
+.hero{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.mobileImg{
+    width: 48.11%;
+    .imgHero{
+        position: relative;
+        aspect-ratio: 1/1;
+        width: 100%;
+        img[alt = children]{
+            position: absolute;
+            width: 765px;
+            width: 100%;
+            background-color: var(--orang80);
+        }
+        img[alt = circels]{
+            position: absolute;
+            width: 76.9%;
+            margin: 11% 12.9%;
+        }
+        
+    }
+}
+
+.textHero{
+    margin: 8.9% 0;
+    width: 49%;
+    .subText{
+        width: fit-content;
+        padding-bottom: 6px;
+        font-family: var(--font-primary);
+        font-weight: var(--fw-500);
+        font-size: 22px;
+        color: var(--grey15);
+        line-height: 150%;
+        display: block;
+        border-bottom: 2px solid var(--grey15);
+    }
+    h1{
+        font-family: var(--font-secondary);
+        font-weight: var(--fw-800);
+        font-size: 54px;
+        line-height: 130%;
+        color: var(--grey10);
+    }
+    p{
+        color: var(--grey20);
+        font-family: var(--font-primary);
+        font-weight: var(--fw-500);
+        font-size: 20px;
+        line-height: 150%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .container{
+        .box{
+            display: flex;
+            gap: 13px;
+        }
+    }
+}
+
+/* تنسيقات محتوى الصندوق */
+.amount{
+    width: 213px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    line-height: 150%;
+    .numberAmount{
+        font-weight: var(--fw-800);
+        font-size: 44px; 
+        line-height: 150%;
+    }
+    .nameAmount{
+        font-weight: var(--fw-500);
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .hero{gap: 50px;}
+    .leftM{
+        top: 49% !important;
+    }
+    .textHero{
+        .subText{
+            font-size: 18px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .container{
+            padding: 20px 40px !important;
+            border-radius: 10px !important;
+            box-shadow: 6px 6px 0px 1px var(--orang80) !important;
+            .box{
+                gap: 10px;
+            }
+        }
+    }
+
+    .amount{
+        width: 172px;
+        .numberAmount{
+            font-size: 34px;
+        }
+        .nameAmount{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .mobileImg{
+        /* max-height: 410px; */
+        width: 100%;
+        .imgHero{
+            width: 100%;
+            /* max-height: 410px; */
+            /* height: 105%; */
+        }
+        .topM{
+            top: -4px !important;
+            right: -10px !important;
+        }
+        .leftM{
+            top: 48.5% !important;
+        }
+        .rightM{
+            top: 52% !important;
+        }
+    }
+    
+    .textHero{
+        width: 100%;
+        .subText{
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            margin-top: 18px;
+            margin-bottom: 40px;
+            .newLine{
+                display: none;
+            }
+        }
+        .container{
+            
+            padding: 40px !important;
+            border-radius: 10px !important;
+            box-shadow: 4px 4px 0px 1px var(--orang80) !important;
+            .box{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                .secondChild{
+                    padding:20px 0 !important; 
+                    border-top: 2px solid var(--grey15) !important;
+                    border-bottom: 2px solid var(--grey15) !important;
+                }
+            }
+        }
+    }
+    .amount{
+        width: 100%;
+        .numberAmount{
+            font-size: 34px;
+        }
+        .nameAmount{
+            font-size: 16px;
+        }
+    }
+}

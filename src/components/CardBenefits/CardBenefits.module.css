@@ -1,0 +1,89 @@
+.mainContainer{
+    .iconContainer{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-left: 30px;
+        top: calc(74px / 2);
+        z-index: 2;
+        :nth-child(1){
+            font-size: 34px;
+            width: 34px;
+            height: 34px;
+        }
+    }
+    .mainCard{
+        height: 306px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            color: var(--grey10);
+            font-family: var(--font-secondary);
+            font-weight: var(--fw-700);
+            font-size: 28px;
+            line-height: 130%;
+        }
+        p{
+            color: var(--grey30);
+            font-family: var(--font-primary);
+            font-weight: var(--fw-500);
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mainContainer{
+        .iconContainer{
+            padding: 16px !important;
+            margin-left: 24px;
+            top: calc(56px / 2);
+            :nth-child(1){
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .mainCard{
+            padding: 60px 40px 40px !important;
+            padding: 15% 10% 10% !important;
+            height: 243px;
+            gap: 16px;
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .mainContainer{
+        .iconContainer{
+            padding: 16px !important;
+            margin-left: 24px;
+            top: calc(56px / 2);
+            :nth-child(1){
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .mainCard{
+            padding: 50px 40px 30px 30px !important;
+            height: 221px;
+            h3{
+                font-size: 22px;
+                white-space: nowrap;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}

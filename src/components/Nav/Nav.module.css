@@ -1,0 +1,221 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+/* styling Above Nav */
+.aboveNav{
+    margin-top: 18px;
+    width: 100%;;
+    border: 2px solid var(--grey15);
+    border-radius: 8px;
+    background-color: var(--orang90);
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .text{
+        padding: 14px 0;
+        font-family: var(--font-primary);
+        font-weight: var(--fw-500);
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--grey15);
+        position: relative;
+        z-index: 6;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+        color: var(--grey15);
+    }
+    .designL{
+        position: absolute;
+        width: 12.3%;
+        left: -9px;
+    }
+    img[alt = DesignRight]{
+        position: absolute;
+        transform: rotateY(180deg);
+        /* left: 1595px; */
+        left: 87.68%;
+        /* width: 224px; */
+        width: 12.3%;
+    }
+    img[alt=firstBall]{
+        position: absolute;
+        width: 72.4px;
+        left: 521.33px;
+        left: 28.7%;
+        top: -2px;
+    }
+    img[alt=secondBall]{
+        position: absolute;
+        width: 39.5px;
+        left: 1214.72px;
+        left: 66.77%;
+        top: 37px;
+        z-index: 3;
+    }
+}
+
+/* styling Nav */
+
+.mainNav{
+    width: 100%;
+    border: 2px solid var(--grey15);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--absolutefff);
+    .mobileMenu{
+        display: none;
+        position: absolute;
+        z-index: 5;
+        top: 171px;
+        left: -100%;
+        background-color: var(--orang95);
+        height: 80vh;
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 70px;
+        align-items: center;
+        list-style: none;
+        transition: all 0.5s ease-out;
+        &.active{
+            left: 5%;
+        }
+        .mobileLink{
+            text-decoration: none;
+            color: var(--grey15);
+            font-family: var(--font-primary);
+            font-weight: var(--fw-500);
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+    .navMenu{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        .orang{
+            background-color: var(--orang75) !important;
+        }
+    }
+    .navLinks{
+        text-decoration: none;
+        padding: 20px 34px;
+        border-left: 2px solid var(--grey15);
+        /* outline: 2px solid var(--grey15); */
+        color: var(--grey15);
+        font-family: var(--font-primary);
+        font-weight: var(--fw-500);
+        font-size: 20px;
+        line-height: 150%;
+        &.activeLink{
+            background-color: var(--orang95);
+        }
+    }
+    .mobileIcon{
+        display: none;
+        border-left: 2px solid var(--grey15);
+        background-color: var(--orang95);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 16px 30px;
+        :nth-child(1){
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /* Above Nav */
+    .aboveNav{
+        margin-top: 16px;
+        /* padding: 12px 0; */
+        border-radius: 6px;
+        .text{
+            padding: 12px 0;
+            font-size: 16px;
+        }
+        .icon{
+            width: 24px;
+            height: 24px;
+        }
+        .designL{
+            width: 180px;
+            /* left: -9px; */
+            /* top: -87px; */
+        }
+        img[alt = DesignRight]{
+            width: 180px;
+            /* left: 1159px; */
+        }
+    }
+    .mainNav{
+        .navLinks{
+            padding: 16px 30px;
+            font-size: 16px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboveNav{
+        margin-top: 40px;
+        border-radius: 6px;
+        gap: 10px;
+        .text{
+            padding: 12px 0;
+            font-size: 14px;
+        }
+        .icon{
+            width: 20px;
+            height: 20px;
+        }
+        .designL{
+            position: absolute;
+            width: 12.3%;
+            left: -9px;
+        }
+        img[alt = DesignRight]{
+            transform: rotateY(180deg);
+            /* left: 87.68%; */
+            left: 307px;
+            width: 12.3%;
+        }
+        img[alt=firstBall]{
+            width: 32.5px;
+            left: 4px;
+            top: -3px;
+        }
+        img[alt=secondBall]{
+            width: 50px;
+            left: 325px;
+            top: 24px;
+        }
+    }
+    .mainNav{
+        .navMenu{
+            display: none;
+        }
+
+        .mobileIcon{
+            display: block;
+        }
+
+        .mobileMenu{
+            display: block;
+            display: flex;
+
+        }
+    }
+        
+    
+}

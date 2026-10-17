@@ -1,0 +1,45 @@
+.container{
+    padding: 20px 24px;
+    display: inline-flex;
+    gap: 8.48px;
+    gap: 10px;
+    align-items: center;
+    border-right: 2px solid var(--grey15);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    img[alt = logo]{
+        width: 33.33px;
+        height: 33.33px;
+    }
+    img[alt = textLogo]{
+        width: 136px;
+        height: 15.82px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container{
+        padding: 16px 20px;
+        gap: 10px;
+        img[alt = logo]{
+            width: 28.33px;
+            height: 28.33px;
+        }
+        img[alt = textLogo]{
+            width: 115.6px;
+            height: 13.44px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        img[alt = logo]{
+            width: 25px;
+            height: 25px;
+        }
+        img[alt = textLogo]{
+            width: 102px;
+            height: 11.8px;
+        }
+    }
+}
